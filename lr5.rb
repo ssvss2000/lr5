@@ -53,7 +53,7 @@ while (connection = server.accept)
                    when 'balance'
                      cmachine.balance
                    else
-                     'Oops error...'
+                     'Error...'
                    end
   File.open('D:\balance.txt', "w") { |f| f.write "#{$cash}" }  
   connection.close 
